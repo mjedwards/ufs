@@ -1,0 +1,100 @@
+section.services {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background: #273138;
+  color: white;
+  margin-bottom: 50px;
+}
+section.services div {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  height: 40%;
+}
+section.services div p {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+section.services div p:hover {
+  transform: translateY(-10%);
+  cursor: pointer;
+}
+section.services div p.hidden {
+  display: none;
+}
+section.services div p:hover + p.hidden {
+  display: block;
+  text-align: center;
+  transition: display ease-in 3s;
+}
+section.services .verticle-line {
+  border-right: #bda643 solid 1.5px;
+}
+.service-info {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+.service-info .ttle {
+  font-size: 3rem;
+  color: #273138;
+}
+.service-info hr {
+  width: 15%;
+  background: #bda643;
+  border: #bda643 solid 1px;
+}
+.service-info .contact-form {
+  background: lightgray;
+  width: 30%;
+  height: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-content: center;
+  margin: 50px auto;
+}
+.service-info .contact-form div.style {
+  width: 100%;
+  height: 25%;
+  background: #273138;
+  border-bottom: #bda643 solid 3px;
+  text-align: center;
+}
+.service-info .contact-form div.style p {
+  margin: 30px auto;
+  color: white;
+  font-size: 2.5rem;
+}
+.service-info .contact-form input {
+  width: 70%;
+  height: 25px;
+}
+.service-info .contact-form textarea {
+  width: 70%;
+  height: 50px;
+}
+.service-info .contact-form button {
+  border: 1px solid #273138;
+  width: 25%;
+  height: 2rem;
+  font-size: 1rem;
+  background: none;
+}
+.service-info .contact-form button:hover {
+  background-color: #273138;
+  color: white;
+  cursor: pointer;
+}
