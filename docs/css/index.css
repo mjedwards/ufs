@@ -317,6 +317,7 @@ header .btn-container {
   header .btn-container {
     justify-content: space-evenly;
     flex-flow: column;
+    margin-bottom: 90px;
   }
 }
 header .btn-container a.header-btn {
@@ -1371,7 +1372,7 @@ section.info .reviews .reviews-container .four {
 }
 @media (max-width: 700px) {
   .info-item {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
 }
 .info-item p {
