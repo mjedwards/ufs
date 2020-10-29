@@ -197,6 +197,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 700px) {
+  .menu-nav a {
+    width: 100%;
+  }
+}
 .menu-nav a img {
   width: 70%;
 }
@@ -1363,6 +1368,11 @@ section.info .reviews .reviews-container .four {
   height: 100%;
   margin-bottom: 20px;
   margin-top: 60px;
+}
+@media (max-width: 700px) {
+  .info-item {
+    margin-bottom: 200px;
+  }
 }
 .info-item p {
   width: 280px;
