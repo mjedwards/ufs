@@ -317,7 +317,7 @@ header .btn-container {
   header .btn-container {
     justify-content: space-evenly;
     flex-flow: column;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
   }
 }
 header .btn-container a.header-btn {
