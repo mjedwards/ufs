@@ -486,6 +486,9 @@ footer div.footer-container section h5 {
   font-size: 1rem;
   color: #ffffff;
 }
+footer div.footer-container section .footer-contact-info h6 {
+  color: #c8d1f1;
+}
 footer div.footer-container section.footer-about-us p {
   line-height: 1rem;
   padding-right: 20px;
@@ -549,7 +552,7 @@ section.info hr {
   margin-bottom: 3%;
 }
 section.info p {
-  width: 50%;
+  width: 100%;
   text-align: center;
   line-height: 1.3rem;
   color: #273138;
@@ -888,32 +891,28 @@ section.info .reviews .reviews-container .review-images .customer-image p {
   width: 100%;
 }
 section.info .reviews .reviews-container .review-images .customer-image p.qr {
-  visibility: hidden;
   transition: opacity 0.2s, visibility 0.2s;
 }
 section.info .reviews .reviews-container .review-images .customer-image:hover {
   opacity: 0.5;
 }
-section.info .reviews .reviews-container .review-images .customer-image:hover p.qr {
-  visibility: visible;
-}
 section.info .reviews .reviews-container .review-images .customer-1 {
-  background: url("../images/customer1.jpg");
+  background: #a9d3f1;
   background-size: cover;
   background-position: center;
 }
 section.info .reviews .reviews-container .review-images .customer-2 {
-  background: url("../images/customer2.jpg");
+  background: #a9d3f1;
   background-size: cover;
   background-position: center;
 }
 section.info .reviews .reviews-container .review-images .customer-3 {
-  background: url("../images/cutsomer3.jpg");
+  background: #a9d3f1;
   background-size: cover;
   background-position: center;
 }
 section.info .reviews .reviews-container .review-images .customer-4 {
-  background: url("../images/cutsomer4.jpg");
+  background: #a9d3f1;
   background-size: cover;
   background-position: center;
 }
@@ -1147,6 +1146,31 @@ section.info .reviews .reviews-container .four {
   background-color: #3997D9;
   width: 95%;
   margin-top: 0px;
+}
+.about-info div .core-values {
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-info div .core-values ul {
+  line-height: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-info div .core-values h1 {
+  font-size: 2rem;
+  margin-bottom: 5%;
+  color: #3997D9;
+}
+.about-info div .core-values .first-lttr {
+  color: #3997D9;
+  font-size: 1.5rem;
 }
 .team-info {
   display: flex;
