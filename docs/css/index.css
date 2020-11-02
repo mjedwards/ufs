@@ -134,7 +134,7 @@ body {
 .hamburger {
   display: none;
 }
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .hamburger {
     display: inline-block;
     z-index: 50;
@@ -255,6 +255,11 @@ header {
   width: 100%;
   height: 100vh;
   margin-bottom: 10%;
+}
+@media (max-width: 1100px) {
+  header {
+    margin-bottom: 15%;
+  }
 }
 header section {
   z-index: 2;
@@ -406,7 +411,7 @@ nav.navigation {
   position: fixed;
   width: 100%;
 }
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   nav.navigation {
     display: none;
   }
@@ -489,6 +494,11 @@ footer div.footer-container section h5 {
 footer div.footer-container section .footer-contact-info h6 {
   color: #c8d1f1;
 }
+@media (max-width: 900px) {
+  footer div.footer-container section .footer-contact-info {
+    font-size: 0.7rem;
+  }
+}
 footer div.footer-container section.footer-about-us p {
   line-height: 1rem;
   padding-right: 20px;
@@ -512,7 +522,7 @@ section.info {
 section.info .scale {
   width: 30%;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info .scale {
     width: 100%;
   }
@@ -522,7 +532,7 @@ section.info p.affirm {
   text-transform: uppercase;
   font-size: medium;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info p.affirm {
     font-size: 0.7rem;
   }
@@ -533,7 +543,7 @@ section.info h3.ttle {
   text-transform: uppercase;
   margin-bottom: 3%;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info h3.ttle {
     font-size: 2rem;
     margin-top: 5%;
@@ -564,7 +574,7 @@ section.info div.img-container {
   grid-column-gap: 16px;
   margin: 80px 50px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info div.img-container {
     grid-template-columns: 1fr;
     margin: 0px 0px;
@@ -579,7 +589,7 @@ section.info div.img-container div {
   padding: 20px;
   height: auto;
 }
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   section.info div.img-container div {
     flex-flow: column;
     justify-content: center;
@@ -610,7 +620,7 @@ section.info div.img-container div div.service-description {
   margin-bottom: 0px;
   padding: 0px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info div.img-container div div.service-description {
     align-items: center;
     justify-content: center;
@@ -628,6 +638,16 @@ section.info div.img-container div div.service-description h4.service-title {
 }
 section.info div.img-container div div.service-description p.service {
   text-align: start;
+}
+@media (max-width: 900px) {
+  section.info div.img-container div div.service-description p.service {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  section.info div.img-container div div.service-description p.service {
+    width: 75%;
+  }
 }
 section.info div.img-container div.service-container:hover > img.img-display {
   transform: translateY(-10%);
@@ -650,7 +670,7 @@ section.info div.mission {
   -ms-flex-align: center;
   align-items: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info div.mission {
     padding: 0px 0px;
   }
@@ -690,7 +710,7 @@ section.info div.mission .mission-section .mission-container {
   -ms-flex-align: center;
   align-items: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info div.mission .mission-section .mission-container {
     align-items: center;
     flex-flow: column-reverse;
@@ -708,7 +728,7 @@ section.info div.mission .mission-section .mission-container .mission-copy {
   flex-flow: column;
   align-items: flex-start;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info div.mission .mission-section .mission-container .mission-copy {
     float: none;
     width: 100%;
@@ -724,7 +744,7 @@ section.info div.mission .mission-section .mission-container .mission-copy h4 {
   font-size: 3rem;
   margin-bottom: 3%;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info div.mission .mission-section .mission-container .mission-copy h4 {
     font-size: 2rem;
   }
@@ -737,7 +757,7 @@ section.info div.mission .mission-section .mission-container .mission-copy p {
   text-align: left;
   margin-bottom: 5%;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info div.mission .mission-section .mission-container .mission-copy p {
     width: 85%;
     text-align: center;
@@ -755,6 +775,12 @@ section.info div.mission .mission-section .mission-container .mission-image-cont
   align-items: center;
   justify-content: center;
   width: 50%;
+}
+@media (max-width: 900px) {
+  section.info div.mission .mission-section .mission-container .mission-image-container {
+    width: 35%;
+    height: 250px;
+  }
 }
 @media (max-width: 700px) {
   section.info div.mission .mission-section .mission-container .mission-image-container {
@@ -816,6 +842,17 @@ section.info .reviews .reviews-container {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 1100px) {
+  section.info .reviews .reviews-container {
+    width: 825px;
+  }
+}
+@media (max-width: 900px) {
+  section.info .reviews .reviews-container {
+    width: 400px;
+    height: 600px;
+  }
+}
 @media (max-width: 700px) {
   section.info .reviews .reviews-container {
     width: 200px;
@@ -852,7 +889,7 @@ section.info .reviews .reviews-container .reviews-copy h1 {
 section.info .reviews .reviews-container .reviews-copy p {
   line-height: 2.4rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.info .reviews .reviews-container .reviews-copy p {
     font-size: 1rem;
   }
@@ -887,8 +924,19 @@ section.info .reviews .reviews-container .review-images .customer-image {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media (max-width: 900px) {
+  section.info .reviews .reviews-container .review-images .customer-image {
+    width: 100px;
+    height: 100px;
+  }
+}
 section.info .reviews .reviews-container .review-images .customer-image p {
   width: 100%;
+}
+@media (max-width: 900px) {
+  section.info .reviews .reviews-container .review-images .customer-image p {
+    font-size: 0.5rem;
+  }
 }
 section.info .reviews .reviews-container .review-images .customer-image p.qr {
   transition: opacity 0.2s, visibility 0.2s;
@@ -942,7 +990,7 @@ section.info .reviews .reviews-container .four {
   width: 100%;
   text-align: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .copyright {
     font-size: 0.5rem;
   }
@@ -1017,7 +1065,7 @@ section.info .reviews .reviews-container .four {
   font-size: 3rem;
   color: #273138;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .about-info .ttle {
     font-size: 2rem;
   }
@@ -1033,7 +1081,7 @@ section.info .reviews .reviews-container .four {
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .about-info div {
     display: inline-block;
   }
@@ -1065,10 +1113,17 @@ section.info .reviews .reviews-container .four {
   padding-right: 450px;
   color: #273138;
 }
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   .about-info div .mission div p {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 2;
+  }
+}
+@media (max-width: 900px) {
+  .about-info div .mission div p {
+    padding-left: 150px;
+    padding-right: 150px;
     line-height: 2;
   }
 }
@@ -1094,16 +1149,33 @@ section.info .reviews .reviews-container .four {
   padding-right: 200px;
   color: #273138;
 }
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   .about-info div .purpose div p {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+@media (max-width: 900px) {
+  .about-info div .purpose div p {
+    padding-left: 150px;
+    padding-right: 150px;
     line-height: 2;
   }
 }
 .about-info div .purpose .skillsets {
   display: flex;
   flex-flow: row wrap;
+}
+@media (max-width: 1100px) {
+  .about-info div .purpose .skillsets {
+    width: 75%;
+  }
+}
+@media (max-width: 900px) {
+  .about-info div .purpose .skillsets {
+    flex-flow: column wrap;
+    width: 100%;
+  }
 }
 .about-info div .purpose .skillsets div.skillset-container {
   width: 50%;
@@ -1156,12 +1228,27 @@ section.info .reviews .reviews-container .four {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1100px) {
+  .about-info div .core-values {
+    margin-top: 150px;
+  }
+}
 .about-info div .core-values ul {
   line-height: 2;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1100px) {
+  .about-info div .core-values ul p {
+    padding: 0px 250px;
+  }
+}
+@media (max-width: 900px) {
+  .about-info div .core-values ul p {
+    padding: 0px 150px;
+  }
 }
 .about-info div .core-values h1 {
   font-size: 2rem;
@@ -1203,7 +1290,7 @@ section.info .reviews .reviews-container .four {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .employees {
     flex-flow: column;
   }
@@ -1246,6 +1333,11 @@ section.info .reviews .reviews-container .four {
   transition: 0.5s;
   transform-origin: left;
   transform: perspective(2000px) rotateY(-90deg);
+}
+@media (max-width: 700px) {
+  .team-card .team-details {
+    font-size: 0.64rem;
+  }
 }
 .team-card:hover .team-details {
   transform: perspective(2000px) rotateY(0deg);
@@ -1316,7 +1408,7 @@ section.info .reviews .reviews-container .four {
   margin-bottom: 100px;
   height: 1000px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .tab-content-item {
     height: initial;
   }
@@ -1341,7 +1433,7 @@ section.info .reviews .reviews-container .four {
   line-height: 1.5;
   padding-right: 25px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .showInfo {
     padding-right: 0px;
   }
@@ -1363,7 +1455,7 @@ section.info .reviews .reviews-container .four {
   color: #999;
   padding: 0 100px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .text-dark {
     padding: 0px 0px;
   }
@@ -1379,7 +1471,7 @@ section.info .reviews .reviews-container .four {
   width: 75%;
   margin-bottom: 100px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .text-alignment {
     margin-bottom: 0px;
   }
@@ -1394,7 +1486,7 @@ section.info .reviews .reviews-container .four {
   margin-bottom: 20px;
   margin-top: 60px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .info-item {
     margin-bottom: 150px;
   }
@@ -1553,7 +1645,7 @@ section.info .reviews .reviews-container .four {
   grid-gap: 80px;
   margin-bottom: 100px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .info-select {
     grid-gap: 0px;
     grid-template-columns: 1fr;
@@ -1610,6 +1702,11 @@ section.info .reviews .reviews-container .four {
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
   position: relative;
+}
+@media (max-width: 1100px) {
+  .contact-form {
+    margin: calc(25vh - 220px) auto;
+  }
 }
 .contact-form h2 {
   margin: 10px 0;
