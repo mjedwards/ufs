@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="../css/index.min.css" /> -->
     <link rel="stylesheet" href="../css/index.min.css" />
     <link rel="stylesheet" href="../css/loader.css" />
     <link rel="icon" type="image/png" href="../images/favicon-32x32.png" />
@@ -91,12 +92,13 @@
     </div>
 
 
-    <form id="cntct-form" class="contact-form">
+    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" id="cntct-form" class="contact-form">
       <h2>CONTACT US</h2>
       <p type="Name:"><input placeholder="Write your full name here.."></input></p>
       <p type="Phone Number:"><input placeholder="xxx-xxx-xxxxx"></input></p>
       <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
       <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+      <div data-netlify-recaptcha="true"></div>
       <button>Send Message</button>
       <div>
         <span class="fa fa-phone"></span>001 1023 567
@@ -174,7 +176,7 @@
             </p>
             <h6>Write Us</h6>
             <p>
-              Email: unforgettablefinancialservices@gmail.com
+              Email: contact@unforgettablefinancialservices.com
             </p>
           </div>
         </section>
