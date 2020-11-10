@@ -92,13 +92,15 @@
     </div>
 
 
-    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" id="cntct-form" class="contact-form">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="cntct-form" class="contact-form">
       <h2>CONTACT US</h2>
+      <p style="visibility:hidden;">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
       <p type="Name:"><input placeholder="Write your full name here.."></input></p>
       <p type="Phone Number:"><input placeholder="xxx-xxx-xxxxx"></input></p>
       <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
       <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
-      <div data-netlify-recaptcha="true"></div>
       <button>Send Message</button>
       <div>
         <span class="fa fa-phone"></span>001 1023 567
